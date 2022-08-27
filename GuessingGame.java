@@ -10,10 +10,13 @@ public class GuessingGame {
         Random generator = new Random();
         int number = 1 + generator.nextInt(100);
         Scanner scanner = new Scanner(System.in);
+        int count=0;
         System.out.println("Guess a number between 1 to 100");
-        for (int i = 0; i < 3; i++) {
+        while (count < 3) {
             int guess = scanner.nextInt();
-            if (guess == number) {
+            if(count == 2 && guess != number){
+                System.out.println("Too Bad You Lost. The number was "+number);   
+            }else if (guess == number) {
                 System.out.println("Congratulations you guessed the correct number ");
             }else if (number-guess<10) {
                 System.out.println("You're Close. Try again");
