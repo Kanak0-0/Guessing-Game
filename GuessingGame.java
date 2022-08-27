@@ -28,8 +28,8 @@ public class GuessingGame {
                 System.out.println("Enter a integer next time.");
             }
             System.out.println();
-            System.out.println(3-(i+1)+" tries left.");
-            
+            System.out.println(3-(count+1)+" tries left.");
+            count++;
         }
         
     }
