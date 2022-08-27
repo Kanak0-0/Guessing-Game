@@ -31,6 +31,6 @@ public class GuessingGame {
             System.out.println(3-(count+1)+" tries left.");
             count++;
         }
-        
+        scanner.close();
     }
 }
